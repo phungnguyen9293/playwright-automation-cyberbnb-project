@@ -10,6 +10,7 @@ type MyFixtures = {
 export const test = base.extend<MyFixtures>({
     homePage: async ({ page }, use) => {
         const homePage = new HomePage(page);
+        await homePage.goto();
         await use(homePage);
     },
     dashboardPage: async ({ page }, use) => {
