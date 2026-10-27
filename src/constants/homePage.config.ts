@@ -1,0 +1,113 @@
+export const HOMEPAGE = {
+    HOMEPAGE_TITLE: 'Cyberbnb',
+    SEARCH_PLACEHOLDER: 'Bạn sắp đi đâu?',
+    ANYWHERE_SECTION: {
+        TITLE: /Ở bất cứ đâu/i,
+        CATEGORIES: [
+            'Toàn bộ nhà',
+            'Chỗ ở độc đáo',
+            'Trang trại và thiên nhiên',
+            'Cho phép mang theo thú cưng',
+        ],
+    },
+    LOCATION_PICKER: {
+        PLACEHOLDER: 'Bạn sắp đi đâu?',
+        TITLE: 'Tìm kiếm địa điểm',
+    },
+    DATE_PICKER: {
+        STATIC_RANGES: ['Today', 'Yesterday', 'This Week', 'Last Week', 'This Month', 'Last Month'],
+    },
+    FILTER_BAR: ['Loại nơi ở', 'Giá', 'Đặt ngay', 'Phòng và phòng ngủ', 'Bộ lọc khác'],
+    SEARCH_BAR: {
+        LOCATION_LABEL: 'Địa điểm',
+        GUEST_LABEL: 'Thêm khách',
+        DATE_FORMAT: 'DD/MM/YYYY',
+    },
+    LOGIN: {
+        HEADING: 'Đăng nhập',
+        EMAIL_LABEL: 'Email',
+        EMAIL_PLACEHOLDER: 'Vui lòng nhập tài khoản',
+        PASSWORD_LABEL: 'Mật khẩu',
+        PASSWORD_PLACEHOLDER: 'Vui lòng nhập mật khẩu',
+        BTN_REGISTER: 'Đăng ký',
+        BTN_LOGIN: 'Đăng nhập',
+        SIGN_OUT: 'Sign out',
+        ERR_EMPTY: 'Vui lòng không bỏ trống',
+        ERR_WRONG_CREDENTIALS: 'Email hoặc mật khẩu không đúng !',
+        ERR_INVALID_EMAIL: 'Vui lòng nhập đúng định dạng email',
+        TOAST_SUCCESS: 'Đăng nhập thành công',
+        TOAST_LOGOUT: 'Đăng xuất thành công',
+    },
+    REGISTER: {
+        HEADING: 'Đăng ký',
+        HEADING_ACCOUNT: 'Đăng ký tài khoản',
+        PLACEHOLDER_NAME: 'Điền tên vào đây...',
+        PLACEHOLDER_PASSWORD: 'Điền mật khẩu....',
+        PLACEHOLDER_PHONE: 'Điền số điện thoại....',
+        PLACEHOLDER_BIRTHDAY: 'Chọn ngày sinh',
+        ERR_BIRTHDAY_EMPTY: 'Vui lòng chọn ngày sinh',
+        ERR_PHONE_INVALID: 'Số điện thoại không hợp lệ',
+        ERR_EMAIL_EXISTS: 'Email đã tồn tại !',
+        TOAST_SUCCESS: 'Đăng ký thành công',
+    },
+    SEARCH: {
+        CHECKIN: 'Nhận phòng',
+        CHECKOUT: 'Trả phòng',
+        GUEST_SUFFIX: 'khách',
+        BTN_BOOK: 'Đặt phòng',
+    },
+    FOOTER: {
+        COPYRIGHT_ANCHOR: /© 2022/i,
+        LANGUAGE: 'Tiếng Việt (VN)',
+        // Chuyển từ mảng Heading đơn thuần sang mảng Object chứa cả Link
+        SECTIONS: [
+            {
+                TITLE: /Giới thiệu/i,
+                LINKS: [
+                    'Phương thức hoạt động của Cyber',
+                    'Trang tin tức',
+                    'Nhà đầu tư',
+                    'Cyber Plus',
+                    'Cyber Luxe',
+                    'HotelTonight',
+                    'Cyber for Work',
+                    'Nhờ có Host, mọi điều đều có thể',
+                    'Cơ hội nghề nghiệp',
+                    'Thư của nhà sáng lập',
+                ],
+            },
+            {
+                TITLE: /Cộng đồng/i,
+                LINKS: [
+                    'Sự đa đạng và Cảm giác thân thuộc',
+                    'Tiện nghi phù hợp cho người khuyết tật',
+                    'Đối tác liên kết Cyber',
+                    'Chỗ ở cho tuyến đầu',
+                    'Lượt giới thiệu của khách',
+                    'CyberSoft.edu.vn',
+                ],
+            },
+            {
+                TITLE: /Đón tiếp khách/i,
+                LINKS: [
+                    'Cho thuê nhà',
+                    'Tổ chức Trải nghiệm trực tuyến',
+                    'Tổ chức Trải nghiệm',
+                    'Đón tiếp khách có trách nhiệm',
+                    'Trung tâm tài nguyên',
+                    'Trung tâm cộng đồng',
+                ],
+            },
+            {
+                TITLE: /Hỗ trợ/i,
+                LINKS: [
+                    'Biện pháp ứng phó đại dịch COVID-19',
+                    'Trung tâm trợ giúp',
+                    'Các tùy chọn hủy',
+                    'Hỗ trợ khu dân cư',
+                    'Tin cây và an toàn',
+                ],
+            },
+        ],
+    },
+};
