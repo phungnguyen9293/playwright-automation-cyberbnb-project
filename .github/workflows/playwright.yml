@@ -39,23 +39,24 @@ jobs:
     - name: Install Allure CLI globally
       run: npm install -g allure-commandline --save-dev
 
+    # 1. Tải lịch sử cũ một cách an toàn (Kiểm tra nếu nhánh gh-pages tồn tại mới checkout)
     - name: Get Allure history
-      uses: actions/checkout@v4
       if: always()
       continue-on-error: true
       run: |
         git fetch origin gh-pages && git checkout origin/gh-pages -- history/ || echo "No previous history found, skipping..."
-    
 
+    # 2. Tạo thư mục allure-report từ allure-results
     - name: Generate Allure Report
       if: always()
       run: |
         if [ -d "history" ]; then
           mkdir -p allure-results/history
-          cp -r gh-pages-dir/history/* allure-results/history/
+          cp -r history/* allure-results/history/
         fi
         allure generate allure-results --clean -o allure-report
 
+    # 3. Push báo cáo lên nhánh gh-pages
     - name: Deploy Allure Report to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       if: always()
