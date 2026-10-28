@@ -8,7 +8,7 @@ An automation testing framework built for the **CyberBnB** platform, powered by 
 
 This project is actively developed and maintained by:
 
-- **NGUYEN TRUONG PHI PHUNG** — Lead Automation Test Engineer
+- **NGUYEN TRUONG PHI PHUNG** — Automation Test Engineer
 - **Claude** — Core AI Assistant & Code Architect
 - **Aider** — AI Pair Programming Agent (Powered by Gemini)
 
@@ -53,7 +53,6 @@ The project utilizes Allure Playwright to generate interactive and graphical tes
 
 ```TypeScript
 reporter: [
-        ['line'],
         ['allure-playwright', { outputFolder: 'allure-results' }]
     ]
 ```
