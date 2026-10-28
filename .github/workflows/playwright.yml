@@ -30,7 +30,7 @@ jobs:
 
     - name: Run Playwright tests
       env:
-          BASE_URL: ${{ secrets.BASE_URL }}
+          BASE_URL: ${{ secrets.BASE_URL || 'https://demo5.cybersoft.edu.vn' }}
           CYBERSOFT_TOKEN: ${{ secrets.CYBERSOFT_TOKEN }}
           DOTENVX_QUIET: true
           DOTENV_CONFIG_SILENT: true

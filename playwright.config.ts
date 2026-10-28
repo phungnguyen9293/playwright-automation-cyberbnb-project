@@ -32,7 +32,7 @@ export default defineConfig({
     trace: 'on-first-retry',
     // headless: false,
     // channel: 'chrome',
-    baseURL: process.env.BASE_URL,
+    baseURL: process.env.BASE_URL || 'https://demo5.cybersoft.edu.vn',
     ignoreHTTPSErrors: true,
     screenshot: 'only-on-failure',
     viewport: { width: 1920, height: 1080 },
