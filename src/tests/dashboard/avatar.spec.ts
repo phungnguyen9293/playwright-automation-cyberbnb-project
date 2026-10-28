@@ -4,7 +4,7 @@ import path from 'path';
 
 test.describe('Dashboard - Update Avatar', () => {
     test.describe.configure({ mode: 'default' });
-    test('UPDATE_AVATAR_01: Should open photo update popup', async ({
+    test('UPDATE_AVATAR_01: Should open avatar update popup', async ({
         homePage,
         dashboardPage,
         page,
