@@ -43,14 +43,14 @@ jobs:
       uses: actions/checkout@v4
       if: always()
       continue-on-error: true
-      with:
-        ref: gh-pages
-        path: gh-pages
+      run: |
+        git fetch origin gh-pages && git checkout origin/gh-pages -- history/ || echo "No previous history found, skipping..."
+    
 
     - name: Generate Allure Report
       if: always()
       run: |
-        if [ -d "gh-pages-dir/history" ]; then
+        if [ -d "history" ]; then
           mkdir -p allure-results/history
           cp -r gh-pages-dir/history/* allure-results/history/
         fi
